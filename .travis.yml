@@ -10,6 +10,7 @@ script:
 on:
   branch: master
 deploy:
+  skip_cleanup: true
   provider: heroku
   api_key: $HEROKU_KEY
   app: $HEROKU_APP
